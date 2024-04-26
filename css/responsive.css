@@ -1,0 +1,119 @@
+@media (max-width: 1220px) {
+  .form {
+    padding: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
+    column-gap: 0px;
+    row-gap: 40px;
+  }
+  .form-info {
+    padding: 35px;
+  }
+  .contact-text {
+    gap: 0px;
+    text-align: center;
+  }
+  .contact-text h1 {
+    font-size: 30px;
+  }
+  .contact-text p {
+    width: 100%;
+    font-size: 20px;
+  }
+  .form-info {
+    min-height: 600px;
+  }
+  .form-info form ul li input {
+    height: 50px;
+    font-size: 16px;
+  }
+  .form-info form ul li:last-of-type input {
+    padding: 20px 10px 160px;
+  }
+}
+
+@media (max-width: 540px) {
+  .form {
+    padding: 30px;
+    row-gap: 0px;
+  }
+  .contact-text h1 {
+    font-size: 20px;
+  }
+  .contact-text p {
+    font-size: 16px;
+  }
+  .form-info {
+    min-height: 100%;
+    padding: 30px;
+  }
+  .form-info form ul li input {
+    height: 40px;
+  }
+  .form-info form ul li:last-of-type input {
+    padding: 20px 10px 120px;
+  }
+  .form-info > span {
+    padding: 15px 0 20px 0;
+    font-size: 16px;
+  }
+  .form-info button {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 430px) {
+  .form {
+    padding: 50px 20px;
+  }
+  .form-info {
+    min-height: 80%;
+    padding: 40px 30px;
+  }
+  .form-info form ul li input {
+    height: 45px;
+    font-size: 16px;
+  }
+  .form-info form ul li:last-of-type input {
+    padding: 20px 10px 140px;
+  }
+  .form-info > span {
+    padding: 15px 0 25px 0;
+    font-size: 18px;
+  }
+  .form-info button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .form {
+    padding: 0px 20px;
+  }
+  .contact-text h1 {
+    font-size: 20px;
+  }
+  .contact-text p {
+    font-size: 16px;
+  }
+  .form-info {
+    padding: 25px 20px;
+  }
+  .form-info form ul li:not(:first-of-type) input {
+    margin-top: 15px;
+ }
+ .form-info form ul li:last-of-type input {
+    padding: 20px 10px 100px;
+  }
+  .form-info > span {
+    padding: 10px 0 15px 0;
+    font-size: 16px;
+  }
+  .form-info form ul li span {
+    font-size: 14px;
+  }
+  .form-info button {
+    font-size: 16px;
+  }
+}

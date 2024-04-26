@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.form {
+  height: 100vh;
+  padding: 0 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 150px;
+  background: url(../images/bg-repeat.jpg);
+  background-size: contain;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+}
+.contact-text h1 {
+  font-size: 40px;
+}
+.contact-text p {
+  width: 65%;
+  font-size: 25px;
+}
+.form-info {
+  min-width: 100%;
+  min-height: 80%;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.form-info form ul li input {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 6px;
+  font-weight: 700;
+}
+.form-info form ul li:not(:first-of-type) input {
+   margin-top: 20px;
+}
+.form-info form ul li:last-of-type input {
+  padding: 20px 10px 200px;
+}
+.form-info form ul li span {
+   display: none;
+}
+.form-info > span {
+  padding: 15px 0 30px 0;
+  font-size: 20px;
+}
+.form-info button {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 20px;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  background-color: #3ccc87;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-info button:hover {
+  background-color: #33af73;
+}
+
+/* verificação */
+
+.form-info form ul li input.error {
+   border: 2px solid red;
+}
+.form-info form ul li input.correct {
+   border: 2px solid green;
+}
+.form-info form ul li span.error {
+   display: block;
+   color: red;
+}
