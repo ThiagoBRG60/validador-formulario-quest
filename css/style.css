@@ -31,7 +31,8 @@
   flex-direction: column;
   background-color: #fff;
 }
-.form-info form ul li input {
+.form-info form ul li input,
+.form-info form ul li textarea {
   width: 100%;
   height: 60px;
   padding: 10px;
@@ -44,8 +45,10 @@
 .form-info form ul li:not(:first-of-type) input {
    margin-top: 20px;
 }
-.form-info form ul li:last-of-type input {
-  padding: 20px 10px 200px;
+.form-info form ul li textarea {
+  height: 200px;
+  resize: none;
+  margin-top: 20px;
 }
 .form-info form ul li span {
    display: none;
@@ -71,10 +74,10 @@
 
 /* verificação */
 
-.form-info form ul li input.error {
+.form-info .campo.error {
    border: 2px solid red;
 }
-.form-info form ul li input.correct {
+.form-info .campo.correct {
    border: 2px solid green;
 }
 .form-info form ul li span.error {

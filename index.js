@@ -1,19 +1,17 @@
-const inputs = document.querySelectorAll(".form-info form input");
+const inputs = document.querySelectorAll(".form-info form .campo");
 const button = document.querySelector(".form-info button");
-const errorSpans = document.querySelectorAll(".form-info form span");
 
-button.addEventListener("click", validate);
+button.addEventListener("click", (e) => {
+  e.preventDefault();
 
-function validate() {
-  inputs.forEach((input, index) => {
-    if (input.value === "") {
+  inputs.forEach((input) => {
+    if (input.value) {
+      input.classList.add("correct");
+      input.nextElementSibling.classList.remove("error");
+    } else {
       input.classList.remove("correct");
       input.classList.add("error");
-      errorSpans[index].classList.add("error");
-    } else {
-      input.classList.remove("error");
-      input.classList.add("correct");
-      errorSpans[index].classList.remove("error");
+      input.nextElementSibling.classList.add("error");
     }
   });
-}
+});
