@@ -27,8 +27,8 @@
     height: 50px;
     font-size: 16px;
   }
-  .form-info form ul li:last-of-type input {
-    padding: 20px 10px 160px;
+  .form-info form ul li textarea {
+    height: 160px;
   }
 }
 
@@ -50,8 +50,8 @@
   .form-info form ul li input {
     height: 40px;
   }
-  .form-info form ul li:last-of-type input {
-    padding: 20px 10px 120px;
+  .form-info form ul li textarea {
+    height: 120px;
   }
   .form-info > span {
     padding: 15px 0 20px 0;
@@ -75,8 +75,8 @@
     height: 45px;
     font-size: 16px;
   }
-  .form-info form ul li:last-of-type input {
-    padding: 20px 10px 140px;
+  .form-info form ul li textarea {
+    height: 140px;
   }
   .form-info > span {
     padding: 15px 0 25px 0;
@@ -103,9 +103,9 @@
   .form-info form ul li:not(:first-of-type) input {
     margin-top: 15px;
  }
- .form-info form ul li:last-of-type input {
-    padding: 20px 10px 100px;
-  }
+ .form-info form ul li textarea {
+  height: 100px;
+}
   .form-info > span {
     padding: 10px 0 15px 0;
     font-size: 16px;
